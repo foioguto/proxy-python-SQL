@@ -1,7 +1,13 @@
 # client.py - Demonstration of the Proxy Pattern usage
+import os
+from dotenv import load_dotenv
+
+dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
+load_dotenv(dotenv_path=dotenv_path)
 
 from app.src.gui.client_gui import ClientApp
 from app.src.core.client_proxy import ClientProxy
+
 
 if __name__ == "__main__":
     app = ClientApp()

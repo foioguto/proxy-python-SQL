@@ -1,8 +1,11 @@
+from client_gui import ClientApp
 # client.py - Demonstration of the Proxy Pattern usage
 
 from client_proxy import ClientProxy
 
 if __name__ == "__main__":
+    app = ClientApp()
+    app.mainloop()
     print("--- Proxy pattern demo ---")
 
     # The Proxy object is created, but the Real Subject (ClientORM) is NOT loaded yet.

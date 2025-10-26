@@ -3,7 +3,6 @@ from tkinter import ttk, messagebox
 import sys
 import io
 
-# Import the main class from your code
 try:
     from client_proxy import ClientProxy
 except ImportError:
@@ -213,6 +212,3 @@ class ClientApp(tk.Tk):
         
         self.destroy()
 
-if __name__ == "__main__":
-    app = ClientApp()
-    app.mainloop()

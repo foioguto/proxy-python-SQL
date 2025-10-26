@@ -1,9 +1,9 @@
 # client_proxy.py - The Virtual Proxy Implementation
 
 from sqlalchemy import select
-from src.core.clientORM import ClientORM
-from src.core.order import Order
-from src.core.model import SessionLocal
+from .clientORM import ClientORM
+from .order import Order
+from .model import SessionLocal
 
 class ClientProxy:
     """

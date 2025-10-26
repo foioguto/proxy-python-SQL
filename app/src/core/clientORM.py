@@ -1,6 +1,6 @@
 # clientORM.py - SQLAlchemy ORM Model for Clients (The Real Subject)
 
-from src.core.model import *
+from .model import *
 
 class ClientORM(Base):
     """

@@ -1,6 +1,6 @@
 # order.py - SQLAlchemy ORM Model for Orders
 
-from src.core.model import *
+from .model import *
 
 class Order(Base):
     """

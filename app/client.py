@@ -1,7 +1,7 @@
 # client.py - Demonstration of the Proxy Pattern usage
 
-from src.gui.client_gui import ClientApp
-from src.core.client_proxy import ClientProxy
+from app.src.gui.client_gui import ClientApp
+from app.src.core.client_proxy import ClientProxy
 
 if __name__ == "__main__":
     app = ClientApp()

@@ -4,7 +4,7 @@ import sys
 import io
 
 try:
-    from app.src.core.client_proxy import ClientProxy
+    from ..core.client_proxy import ClientProxy
 except ImportError:
     messagebox.showerror("Import Error", 
                          "Ensure that 'client_proxy.py', 'model.py', 'clientORM.py', and 'order.py' files are in the same directory.")

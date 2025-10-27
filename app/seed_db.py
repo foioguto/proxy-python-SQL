@@ -1,10 +1,18 @@
+import os
+from dotenv import load_dotenv
+
+# ADD THESE LINES to load .env before importing 'engine'
+# This assumes your .env file is inside the 'app' folder
+dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
+load_dotenv(dotenv_path=dotenv_path)
+
 # app/seed_db.py - Script to seed the database
 
 # Uses absolute imports from the 'app' package
 from app.src.core import SessionLocal, ClientORM, Order
 import random
 
-NUM_CLIENTS = 1000
+NUM_CLIENTS = 1000000
 
 # List of 200 words (mix of common names and surnames for simulation)
 WORD_LIST = [
